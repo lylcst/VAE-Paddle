@@ -1,2 +1,6 @@
 # VAE-Paddle
-VAE paddlepaddle implement
+VAE
+ConvVAE
+
+运行：
+python 
