@@ -15,6 +15,7 @@ or
 ```
 CUDA_VISIBLE_DEVICES=0 \
 python train.py \
+    --mode=convVAE \
     --result_dir=result \
     --save_dir=checkpoint \
     --batch_size=128 \
