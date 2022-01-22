@@ -25,16 +25,3 @@ def mnist_loader(batch_size=64, num_workers=1):
     classes = ('0', '1', '2', '3', '4', '5', '6', '7', '8', '9')
 
     return train_loader, test_loader, classes
-
-
-def imshow(img):
-    img = img.numpy()
-    plt.imshow(np.transpose(img, (1, 2, 0)))
-    plt.show()
-
-
-if __name__ == '__main__':
-    train_loader, _, _ = mnist_loader()
-    data_iter = iter(train_loader)
-    imgs, labels = data_iter.__next__()
-    imshow(imgs[0])
