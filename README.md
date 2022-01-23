@@ -5,7 +5,9 @@ Currently, the following models are supported:
 ✔️ VAE  
 ✔️ Conv-VAE
 
-# 2.Usage
+# 2.Usage  
+
+### Train Model:  
 
 ```
 CUDA_VISIBLE_DEVICES=0
@@ -25,7 +27,16 @@ python train.py \
     --input_dim=28*28 \
     --input_channels=1
 ```
-you can also specify some customized options in ```train.py```
+you can also specify some customized options in ```train.py```  
+
+### Generate Mnist Image:  
+
+```
+python generate.py \
+    --mode=convVAE \
+    --ckpt='' \ #指定模型参数文件路径
+    --result_dir=generate_result
+```
 
 # 3.Result
 
